@@ -1,0 +1,43 @@
+chinstrap:
+  pkgs:
+    workstation:
+      - app-admin/gkrellm
+      - app-admin/terraform
+      - app-arch/rar
+      - app-arch/unrar
+      - app-editors/nano
+      - app-emulation/virt-manager
+      - app-portage/repoman
+      - app-text/qpdfview
+      - dev-php/PHP_CodeSniffer
+      - dev-php/PEAR-PHP_Beautifier
+      - dev-python/black
+      - dev-python/pip
+      - dev-python/pipenv
+      - dev-python/pylint
+      - dev-python/virtualenv
+      - dev-ruby/sass
+      - dev-util/shellcheck
+      - dev-vcs/tig
+      - media-gfx/blender
+      - media-sound/audacious
+      - net-fs/davfs2
+      - net-im/purple-events
+      - net-im/slack-libpurple
+      - net-misc/x11-ssh-askpass
+      - net-misc/freerdp
+      - net-misc/vinagre
+      - net-p2p/syncthing-gtk
+      - net-p2p/transmission
+      - sci-calculators/galculator
+      - sys-apps/gsmartcontrol
+      - sys-cluster/minikube
+      - sys-devel/gdb
+      - sys-process/lsof
+      - x11-plugins/pidgin-libnotify
+      - x11-plugins/pidgin-skypeweb
+      - x11-plugins/pidgin-telegram
+      - x11-plugins/purple-libnotify-plus
+      - x11-plugins/purple-plugin_pack
+      - x11-themes/geany-themes
+      - www-client/google-chrome

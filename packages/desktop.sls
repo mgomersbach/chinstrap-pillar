@@ -1,0 +1,44 @@
+chinstrap:
+  pkgs:
+    desktop:
+      - app-admin/keepassxc
+      - app-arch/file-roller
+      - app-office/libreoffice
+      - gnome-extra/gucharmap
+      - mail-client/thunderbird
+      - media-fonts/fira-code
+      - media-fonts/fira-sans
+      - media-gfx/geeqie
+      - media-gfx/gimp
+      - media-gfx/xsane
+      - media-sound/pavucontrol
+      - media-video/mpv
+      - net-fs/autofs
+      - net-im/pidgin
+      - net-wireless/blueman
+      - sys-auth/nss-mdns
+      - sys-fs/mtpfs
+      - www-client/firefox
+      - x11-apps/xdm
+      - x11-base/xorg-server
+      - x11-base/xorg-x11
+      - x11-misc/xdotool
+      - x11-misc/light-locker
+      - x11-misc/qt5ct
+      - x11-misc/redshift
+      - x11-misc/vdpauinfo
+      - x11-misc/wmctrl
+      - x11-terms/rxvt-unicode
+      - x11-themes/numix-icon-theme
+      - x11-themes/numix-solarized
+      - x11-themes/qtstyleplugins
+      - xfce-base/xfce4-meta
+      - xfce-extra/xfce4-notifyd
+      - xfce-extra/xfce4-power-manager
+      - xfce-extra/xfce4-pulseaudio-plugin
+      - xfce-extra/xfce4-screenshooter
+      - xfce-extra/xfce4-taskmanager
+      - xfce-extra/xfce4-whiskermenu-plugin
+      - xfce-extra/thunar-media-tags-plugin
+      - xfce-extra/thunar-shares-plugin
+      - xfce-extra/thunar-volman
