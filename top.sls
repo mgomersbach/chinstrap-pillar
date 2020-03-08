@@ -1,5 +1,6 @@
 base:
-  '*':
+  'eselect:profile:chinstrap*':
+    - match: grain
     - ssh.default
     - sysctl.default
     - iptables.default
@@ -51,7 +52,7 @@ base:
     - lightdm.default
     - packages.media
     - packages.desktop
-  'eselect:profile:chinstrap*workstation':
+  'eselect:profile:chinstrap*markws':
     - match : grain
     - sysctl.forward
     - lightdm.default
