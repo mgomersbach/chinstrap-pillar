@@ -9,7 +9,6 @@ base:
     - rsyslog.default
     - genkernel.default
     - gentoo.portage.default
-    - grub.default
     - packages.toolchain
     - packages.salt
     - packages.base
@@ -27,9 +26,7 @@ base:
     - packages.devices
     - packages.pm
     - packages.wireless
-    - grub.quietboot
-    - grub.btrfs
-    - grub.btrfsroot
+    - grub.default
   'eselect:profile:chinstrap*server':
     - match : grain
     - sysctl.forward
