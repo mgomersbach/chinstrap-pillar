@@ -11,7 +11,6 @@ chinstrap:
       - app-text/qpdfview
       - dev-php/PHP_CodeSniffer
       - dev-php/PEAR-PHP_Beautifier
-      - dev-python/black
       - dev-python/pip
       - dev-python/pipenv
       - dev-python/pylint
