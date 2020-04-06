@@ -34,6 +34,7 @@ base:
     - packages.server
     - packages.dockerhost
     - docker.default
+    - php.default
   'G@eselect:profile:chinstrap*server and G@virtual:physical':
     - match : compound
     - packages.libvirthost
