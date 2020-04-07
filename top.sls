@@ -44,6 +44,7 @@ base:
     - packages.server
     - packages.dockerhost
     - docker.default
+    - php.default
     - packages.buildhelper
   'eselect:profile:chinstrap*desktop':
     - match : grain
@@ -63,3 +64,4 @@ base:
     - packages.gaming
     - packages.workstation
     - docker.default
+    - php.default
