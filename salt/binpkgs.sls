@@ -1,4 +1,3 @@
 salt:
-  minion:
-    grains:
-      role: binpkg
+  grains:
+    role: binpkg
