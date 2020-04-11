@@ -62,6 +62,7 @@ base:
     - php.default
   'G@role:binpkg and G@eselect:profile:chinstrap*':
     - match: compound
+    - salt.binpkgs
     - binpkgs.toolchain
     - binpkgs.base
     - binpkgs.bootloader
