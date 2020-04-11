@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     gaming:
       - app-emulation/wine-vanilla
       - games-emulation/dosbox-x

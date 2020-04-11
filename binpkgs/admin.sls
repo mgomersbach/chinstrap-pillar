@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     admin:
       - app-admin/eclean-kernel
       - app-misc/jq

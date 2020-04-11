@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     wireless:
       - net-wireless/wireless-tools
       - net-wireless/wpa_supplicant

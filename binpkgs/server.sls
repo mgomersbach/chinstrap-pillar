@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     server:
       - app-crypt/certbot-nginx
       - app-metrics/prometheus

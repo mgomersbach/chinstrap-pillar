@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     base:
       - app-arch/lbzip2
       - app-arch/lzop

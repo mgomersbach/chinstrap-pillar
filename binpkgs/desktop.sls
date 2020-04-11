@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     desktop:
       - app-admin/keepassxc
       - app-office/libreoffice

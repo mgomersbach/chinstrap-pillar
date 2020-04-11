@@ -1,4 +1,4 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     pm:
       - app-laptop/laptop-mode-tools

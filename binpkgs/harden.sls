@@ -1,4 +1,4 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     harden:
       - sys-auth/pam_u2f

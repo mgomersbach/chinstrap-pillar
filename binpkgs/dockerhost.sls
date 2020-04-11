@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     dockerhost:
       - app-emulation/docker-compose
       - app-emulation/docker-machine

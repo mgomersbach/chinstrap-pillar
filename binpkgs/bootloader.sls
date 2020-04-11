@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     bootloader:
       - media-gfx/grub2-solarized
       - sys-fs/btrfs-progs

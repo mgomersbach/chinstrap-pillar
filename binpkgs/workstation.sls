@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     workstation:
       - app-admin/gkrellm
       - app-admin/terraform

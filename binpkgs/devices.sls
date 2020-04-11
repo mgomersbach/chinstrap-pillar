@@ -1,5 +1,5 @@
 chinstrap:
-  pkgs:
+  bpkgs:
     devices:
       - net-misc/bridge-utils
       - net-misc/chrony
