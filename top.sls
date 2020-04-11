@@ -51,7 +51,6 @@ base:
     - match: grain
     - sysctl.forward
     - lightdm.default
-    - gentoo.portage.binmedia
     - packages.dockerhost
     - packages.server
     - packages.buildhelper
