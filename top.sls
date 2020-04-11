@@ -29,7 +29,6 @@ base:
   'eselect:profile:chinstrap*server':
     - match: grain
     - sysctl.forward
-    - packages.media
     - packages.server
     - packages.dockerhost
     - docker.default
@@ -39,7 +38,6 @@ base:
     - packages.libvirthost
   'eselect:profile:chinstrap*buildhelper':
     - match: grain
-    - packages.media
     - packages.server
     - packages.dockerhost
     - docker.default
@@ -48,14 +46,12 @@ base:
   'eselect:profile:chinstrap*desktop':
     - match: grain
     - lightdm.default
-    - packages.media
     - packages.desktop
   'eselect:profile:chinstrap*markws':
     - match: grain
     - sysctl.forward
     - lightdm.default
     - gentoo.portage.binmedia
-    - packages.media
     - packages.dockerhost
     - packages.server
     - packages.buildhelper
