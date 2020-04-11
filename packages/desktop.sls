@@ -1,16 +1,12 @@
 chinstrap:
   pkgs:
     desktop:
-      - app-admin/keepassxc
       - app-arch/file-roller
-      - app-office/libreoffice
       - gnome-extra/gucharmap
-      - mail-client/thunderbird
       - media-fonts/fira-code
       - media-fonts/fira-sans
       - media-gfx/geeqie
       - media-gfx/gimp
-      - media-gfx/xsane
       - media-sound/pavucontrol
       - media-video/mpv
       - net-fs/autofs
@@ -18,7 +14,6 @@ chinstrap:
       - net-wireless/blueman
       - sys-auth/nss-mdns
       - sys-fs/mtpfs
-      - www-client/firefox
       - x11-apps/xdm
       - x11-base/xorg-server
       - x11-base/xorg-x11
@@ -42,3 +37,12 @@ chinstrap:
       - xfce-extra/thunar-media-tags-plugin
       - xfce-extra/thunar-shares-plugin
       - xfce-extra/thunar-volman
+      - x11-plugins/pidgin-libnotify
+      - x11-plugins/pidgin-skypeweb
+      - x11-plugins/pidgin-telegram
+      - x11-plugins/purple-libnotify-plus
+      - x11-plugins/purple-plugin_pack
+      - x11-themes/geany-themes
+      - net-im/purple-events
+      - net-im/slack-libpurple
+      - app-text/qpdfview

@@ -11,6 +11,7 @@ chinstrap:
       - sys-devel/gcc
       - sys-devel/gcc-config
       - sys-kernel/linux-headers
+      - sys-libs/binutils-libs
       - sys-libs/glibc
       - sys-libs/timezone-data
       - sys-libs/zlib

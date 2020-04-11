@@ -14,21 +14,20 @@ base:
     - packages.base
     - packages.bootloader
     - packages.admin
-    - packages.harden
   'G@cpu_flags:rdrand':
-    - match : compound
+    - match: compound
     - rng-tools.default
   'not G@cpu_flags:rdrand':
     - match: compound
     - rng-tools.nohw
   'G@virtual:physical':
-    - match : compound
+    - match: compound
     - packages.devices
     - packages.pm
     - packages.wireless
     - grub.default
   'eselect:profile:chinstrap*server':
-    - match : grain
+    - match: grain
     - sysctl.forward
     - packages.media
     - packages.server
@@ -36,10 +35,10 @@ base:
     - docker.default
     - php.default
   'G@eselect:profile:chinstrap*server and G@virtual:physical':
-    - match : compound
+    - match: compound
     - packages.libvirthost
   'eselect:profile:chinstrap*buildhelper':
-    - match : grain
+    - match: grain
     - packages.media
     - packages.server
     - packages.dockerhost
@@ -47,12 +46,12 @@ base:
     - php.default
     - packages.buildhelper
   'eselect:profile:chinstrap*desktop':
-    - match : grain
+    - match: grain
     - lightdm.default
     - packages.media
     - packages.desktop
   'eselect:profile:chinstrap*markws':
-    - match : grain
+    - match: grain
     - sysctl.forward
     - lightdm.default
     - gentoo.portage.binmedia
@@ -65,3 +64,29 @@ base:
     - packages.workstation
     - docker.default
     - php.default
+  'G@role:binpkg and G@eselect:profile:chinstrap*':
+    - match: compound
+    - binpkgs.toolchain
+    - binpkgs.base
+    - binpkgs.bootloader
+    - binpkgs.admin
+    - binpkgs.harden
+    - binpkgs.pm
+    - binpkgs.wireless
+  'G@role:binpkg and G@eselect:profile:chinstrap*server':
+    - match: compound
+    - binpkgs.media
+    - binpkgs.server
+    - binpkgs.dockerhost
+  'G@role:binpkg and G@eselect:profile:chinstrap*desktop':
+    - match: compound
+    - binpkgs.media
+    - binpkgs.desktop
+  'G@role:binpkg and G@eselect:profile:chinstrap*markws':
+    - match: compound
+    - binpkgs.media
+    - binpkgs.dockerhost
+    - binpkgs.server
+    - binpkgs.desktop
+    - binpkgs.gaming
+    - binpkgs.workstation
