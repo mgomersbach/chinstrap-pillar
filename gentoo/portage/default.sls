@@ -5,10 +5,6 @@ portage:
     set: ${COMMON_FLAGS}
   cxxflags:
     set: ${COMMON_FLAGS}
-  fcflags:
-    set: ${COMMON_FLAGS}
-  fflags:
-    set: ${COMMON_FLAGS}
   makeopts:
     set: -j{{ grains['num_cpus'] }} -l{{ avgload }}
   emerge_default_opts:
@@ -22,6 +18,10 @@ portage:
     present:
       - 'rsync://gentoo.hexnet.nl/gentoo-portage'
   extra_vars:
+    fcflags:
+      set: ${COMMON_FLAGS}
+    fflags:
+      set: ${COMMON_FLAGS}
     cpu_flags_x86:
       set: {{ grains['cpu_native']['cpuflags']|join(' ') }}
     cpu_cflags:
