@@ -62,6 +62,7 @@ base:
   'G@role:binpkg and G@eselect:profile:chinstrap*':
     - match: compound
     - salt.binpkgs
+    - gentoo.portage.genericcflags
     - binpkgs.base
     - binpkgs.bootloader
     - binpkgs.admin
