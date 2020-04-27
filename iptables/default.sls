@@ -22,7 +22,7 @@ firewall:
           match: conntrack
           ctstate: 'ESTABLISHED,RELATED'
           jump: ACCEPT
-        01_allow_ICMP:
+        00_allow_ICMP:
           protocol: icmp
           jump: ACCEPT
         01_ignore_dhcp:
