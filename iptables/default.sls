@@ -23,8 +23,8 @@ firewall:
           ctstate: 'ESTABLISHED,RELATED'
           jump: ACCEPT
         00_drop_invalid:
-          match: state
-          state: INVALID
+          match: conntrack
+          ctstate: INVALID
           jump: REJECT
         00_allow_ICMP:
           protocol: icmp
@@ -55,8 +55,8 @@ firewall:
           ctstate: 'ESTABLISHED,RELATED'
           jump: ACCEPT
         00_drop_invalid:
-          match: state
-          state: INVALID
+          match: conntrack
+          ctstate: INVALID
           jump: REJECT
     OUTPUT:
       policy: ACCEPT
@@ -66,8 +66,8 @@ firewall:
           ctstate: 'RELATED,ESTABLISHED'
           jump: ACCEPT
         00_drop_invalid:
-          match: state
-          state: INVALID
+          match: conntrack
+          ctstate: INVALID
           jump: REJECT
         01_track_output_tcp:
           protocol: tcp
