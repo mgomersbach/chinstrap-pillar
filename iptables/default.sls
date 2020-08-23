@@ -12,7 +12,7 @@ firewall:
       rules:
         00_limitedlog:
           jump: LOG
-          log-prefix: "IPTables-LOG: "
+          log-prefix: 'IPTables-LOG: '
         01_drop_after_log:
           jump: DROP
     INPUT:

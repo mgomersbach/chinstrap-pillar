@@ -30,6 +30,6 @@ sshd_config:
   PrintMotd: 'yes'
   PrintLastLog: 'yes'
   TCPKeepAlive: 'yes'
-  Subsystem: "sftp /usr/lib64/misc/sftp-server"
-  AcceptEnv: "LANG LC_*"
+  Subsystem: 'sftp /usr/lib64/misc/sftp-server'
+  AcceptEnv: 'LANG LC_*'
   UsePAM: 'yes'

@@ -2,41 +2,41 @@ genkernel:
   config:
     # Should we install to $BOOTDIR?  Default is "no" because genkernel is used in
     # catalyst and stage building.
-    - install: "yes"
+    - install: 'yes'
 
     # Run 'make oldconfig' before compiling this kernel?
-    - oldconfig: "no"
+    - oldconfig: 'no'
 
     # Run 'make menuconfig' before compiling this kernel?
-    - menuconfig: "no"
+    - menuconfig: 'no'
 
     # Run 'make nconfig' (ncurses 'menuconfig') before compiling this kernel?
-    - nconfig: "no"
+    - nconfig: 'no'
 
     # Run 'make clean' before compilation?
-    - clean: "no"
+    - clean: 'no'
 
     # Run 'make mrproper' before configuration/compilation?
-    - mrproper: "no"
+    - mrproper: 'no'
 
     # Override the arch detection?
     #- arch_override: "x86"
 
     # Mount BOOTDIR automatically if it isn't mounted?
-    - mountboot: "yes"
+    - mountboot: 'yes'
 
     # Make symlinks in BOOTDIR automatically?
     #- symlink: "no"
 
     # Save the new configuration in /etc/kernels upon
     # successful compilation
-    - save_config: "yes"
+    - save_config: 'yes'
 
     # Use Color output in Genkernel?
-    - usecolor: "yes"
+    - usecolor: 'yes'
 
     # Clear build cache dir
-    - clear_cache_dir: "yes"
+    - clear_cache_dir: 'yes'
 
     # Clear all tmp files and caches after genkernel has run
     #- postclear: "1"
@@ -46,7 +46,7 @@ genkernel:
     # tweaking the following line. Default setting is set up by
     # ${GK_SHARE}/${ARCH_OVERRIDE}/config.sh . The recommended value for -j
     # argument is: (number of processors)*(number of cores per processor)+1
-    - makeopts: "$(portageq envvar MAKEOPTS)"
+    - makeopts: '$(portageq envvar MAKEOPTS)'
 
     # Add in LVM support from static binaries if they exist on the system, or
     # compile static LVM binaries if static ones do not exist.
@@ -56,21 +56,21 @@ genkernel:
     #- luks: "no"
 
     # Add in GnuPG support
-    - gpg: "yes"
+    - gpg: 'yes'
 
     # Add in early microcode support
-    - microcode: "no"
+    - microcode: 'no'
 
     # Include early microcode in generated initramfs.
     # This is enabled by default for upgrade compatability, however is obsoleted by
     # sys-boot/grub-2.02-r1, which supports multiple initramfs in the bootloader.
-    - microcode_initramfs: "no"
+    - microcode_initramfs: 'no'
 
     # Add DMRAID support.
     #- dmraid: "no"
 
     # Add SSH support
-    - ssh: "yes"
+    - ssh: 'yes'
     - ssh_host_keys: runtime
     # Include (or suppresses the inclusion of) busybox in the initrd or initramfs.
     # If included, busybox is rebuilt if the cached copy is out of date.
@@ -78,7 +78,7 @@ genkernel:
 
     # Includes mdadm/mdmon binaries in initramfs.
     # Without sys-fs/mdadm[static] installed, this will build a static mdadm.
-    - mdadm: "yes"
+    - mdadm: 'yes'
 
     # Specify a custom mdadm.conf.
     # By default the ramdisk will be built *without* an mdadm.conf and will auto-detect
@@ -95,13 +95,13 @@ genkernel:
     #- e2fsprogs: "no"
 
     # Add BTRFS support
-    - btrfs: "yes"
+    - btrfs: 'yes'
 
     # Enable disklabel support (copies blkid to initrd)
-    - disklabel: "yes"
+    - disklabel: 'yes'
 
     # Enable copying of firmware into initramfs
-    - firmware: "no"
+    - firmware: 'no'
     # Specify directory to pull from
     #- firmware_dir: "/lib/firmware"
     # Specify specific firmware files to include. This overrides FIRMWARE_DIR
@@ -111,7 +111,7 @@ genkernel:
     #- bootloader: "grub"
 
     # Enable splashutils in early space (initrd). Default is "no".
-    - splash: "no"
+    - splash: 'no'
 
     # Use this splash theme. If commented out - the "default" name theme is used.
     # Also, SPLASH: "yes" needs to be enabled for this one to one work.
@@ -120,7 +120,7 @@ genkernel:
 
     # Run "emerge @module-rebuild" automatically when possible and necessary
     # after kernel and modules have been compiled
-    - modulerebuild: "yes"
+    - modulerebuild: 'yes'
 
     # =========Keymap Settings=========
     #
@@ -174,21 +174,21 @@ genkernel:
     #- bootdir: "/boot"
 
     # Default share directory location
-    - gk_share: "${GK_SHARE:-/usr/share/genkernel}"
+    - gk_share: '${GK_SHARE:-/usr/share/genkernel}'
 
     # Location of the default cache
-    - cache_dir: "/var/cache/genkernel"
+    - cache_dir: '/var/cache/genkernel'
     # Location of DISTDIR, where our source tarballs are stored
-    - distdir: "${GK_SHARE}/distfiles"
+    - distdir: '${GK_SHARE}/distfiles'
     # Log output file
-    - logfile: "/var/log/genkernel.log"
+    - logfile: '/var/log/genkernel.log'
     # Debug Level
-    - loglevel: "1"
+    - loglevel: '1'
 
     # =========COMPILED UTILS CONFIGURATION============
     #
     # Default location of kernel source
-    - default_kernel_source: "/usr/src/linux"
+    - default_kernel_source: '/usr/src/linux'
     # Default kernel config (only use to override using
     # arch/%%ARCH%%/kernel-config-${VER}.${PAT} !)
     #- default_kernel_config: "${GK_SHARE}/arch/%%ARCH%%/kernel-config"
@@ -259,20 +259,17 @@ genkernel:
 
     # Build the generated initramfs into the kernel instead of
     # keeping it as a separate file
-    - integrated_initramfs: "0"
+    - integrated_initramfs: '0'
 
     # Compress generated initramfs
-    - compress_initrd: "yes"
+    - compress_initrd: 'yes'
 
     # Types of compression: best, xz, lzma, bzip2, gzip, lzop, fastest
-    - compress_initrd_type: "xz"
-
+    - compress_initrd_type: 'zstd'
     # wrap initramfs using mkimage for u-boot bootloader
     #- wrap_initrd: "no"
-
     # Create a self-contained env in the initramfs
     #- netboot: "1"
-
     # =========MISC BOOT CONFIGURATION============
     #
     # Specify a default for real_root=

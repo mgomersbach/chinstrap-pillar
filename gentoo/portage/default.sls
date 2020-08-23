@@ -23,9 +23,9 @@ portage:
     fflags:
       set: ${COMMON_FLAGS}
     cpu_flags_x86:
-      set: {{ grains['cpu_native']['cpuflags']|join(' ') }}
+      set: "{{ grains['cpu_native']['cpuflags']|join(' ') }}"
     cpu_cflags:
-      set: {{ grains['cpu_native']['cflags']|join(' ') }}
+      set: "{{ grains['cpu_native']['cflags']|join(' ') }}"
     common_flags:
       set: ${CPU_CFLAGS} -O2 -pipe
     grub_platforms:

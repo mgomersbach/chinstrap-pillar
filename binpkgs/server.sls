@@ -6,3 +6,4 @@ chinstrap:
       - net-fs/davfs2
       - net-misc/geoipupdate
       - www-servers/nginx
+      - app-metrics/nginx-vts-exporter
