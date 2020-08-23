@@ -96,6 +96,10 @@ sysctl:
     net.ipv6.conf.default.forwarding:
       value: 0
       config: 01-net.conf
+    # Allow for loopback
+    net.ipv4.conf.lo.forwarding:
+      value: 0
+      config: 01-net.conf
     # Disables IP source routing
     net.ipv4.conf.all.send_redirects:
       value: 0
@@ -115,12 +119,23 @@ sysctl:
     net.ipv6.conf.default.accept_source_route:
       value: 0
       config: 01-net.conf
+    # Allow for loopback
+    net.ipv4.conf.lo.send_redirects:
+      value: 1
+      config: 01-net.conf
+    net.ipv4.conf.lo.accept_source_route:
+      value: 1
+      config: 01-net.conf
     # Enable IP spoofing protection, turn on source route verification
     net.ipv4.conf.all.rp_filter:
       value: 2
       config: 01-net.conf
     net.ipv4.conf.default.rp_filter:
       value: 1
+      config: 01-net.conf
+    # Disable for loopback
+    net.ipv4.conf.lo.rp_filter:
+      value: 0
       config: 01-net.conf
     # Disable ICMP Redirect Acceptance
     net.ipv4.conf.all.accept_redirects:
@@ -130,15 +145,22 @@ sysctl:
       value: 0
       config: 01-net.conf
     net.ipv4.conf.all.secure_redirects:
-      value: 0
+      value: 1
       config: 01-net.conf
     net.ipv4.conf.default.secure_redirects:
-      value: 0
+      value: 1
       config: 01-net.conf
     net.ipv6.conf.all.accept_redirects:
       value: 0
       config: 01-net.conf
     net.ipv6.conf.default.accept_redirects:
+      value: 0
+      config: 01-net.conf
+    # Enable for loopback
+    net.ipv4.conf.lo.accept_redirects:
+      value: 1
+      config: 01-net.conf
+    net.ipv4.conf.lo.secure_redirects:
       value: 0
       config: 01-net.conf
     # Enable Log Spoofed Packets, Source Routed Packets, Redirect Packets
@@ -147,6 +169,10 @@ sysctl:
       config: 01-net.conf
     net.ipv4.conf.default.log_martians:
       value: 1
+      config: 01-net.conf
+    # Disable for loopback
+    net.ipv4.conf.lo.log_martians:
+      value: 0
       config: 01-net.conf
     # Decrease the time default value for tcp_fin_timeout connection
     net.ipv4.tcp_fin_timeout:
@@ -166,9 +192,17 @@ sysctl:
     net.ipv4.conf.all.bootp_relay:
       value: 0
       config: 01-net.conf
+    # Enable for loopback
+    net.ipv4.conf.lo.bootp_relay:
+      value: 1
+      config: 01-net.conf
     # Don't proxy arp for anyone
     net.ipv4.conf.all.proxy_arp:
       value: 0
+      config: 01-net.conf
+    # Enable for loopback
+    net.ipv4.conf.lo.proxy_arp:
+      value: 1
       config: 01-net.conf
     # Turn on SACK
     net.ipv4.tcp_dsack:
@@ -254,7 +288,7 @@ sysctl:
       config: 01-net.conf
     # Allow tw_reuse
     net.ipv4.tcp_tw_reuse:
-      value: 1
+      value: 2
       config: 01-net.conf
     # Limit number of orphans, each orphan can eat up to 16M (max wmem) of unswappable memory
     net.ipv4.tcp_max_orphans:
