@@ -117,7 +117,7 @@ sysctl:
       config: 01-net.conf
     # Enable IP spoofing protection, turn on source route verification
     net.ipv4.conf.all.rp_filter:
-      value: 1
+      value: 2
       config: 01-net.conf
     net.ipv4.conf.default.rp_filter:
       value: 1
@@ -320,8 +320,4 @@ sysctl:
     # Don't save metrics
     net.ipv4.tcp_no_metrics_save:
       value: 0
-      config: 01-net.conf
-    # Allow the TCP fastopen flag to be used, beware some firewalls do not like TFO! (kernel > 3.7)
-    net.ipv4.tcp_fastopen:
-      value: 3
       config: 01-net.conf
