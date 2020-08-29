@@ -1,6 +1,7 @@
 salt:
   minion:
     master_type: false
+    file_client: local
     fileserver_backend:
       - git
     gitfs_remotes:
@@ -21,9 +22,8 @@ salt:
       - https://github.com/saltstack-formulas/timezone-formula.git
       - https://github.com/saltstack-formulas/resolver-formula.git
       - https://github.com/saltstack-formulas/iptables-formula.git
-
-    mine_interval: 60
-    file_client: local
+    use_superseded:
+      - module.run
 
 salt_formulas:
   git_opts:
