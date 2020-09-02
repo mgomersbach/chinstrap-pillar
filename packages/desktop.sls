@@ -40,7 +40,6 @@ chinstrap:
       - x11-plugins/pidgin-libnotify
       - x11-plugins/pidgin-skypeweb
       - x11-plugins/pidgin-telegram
-      - x11-plugins/purple-libnotify-plus
       - x11-themes/geany-themes
       - net-im/purple-events
       - net-im/slack-libpurple
