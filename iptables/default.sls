@@ -29,11 +29,6 @@ firewall:
         00_allow_ICMP:
           protocol: icmp
           jump: ACCEPT
-        01_ignore_dhcp:
-          protocol: udp
-          match: multiport
-          dports: 67,68
-          jump: DROP
         01_loopback:
           i: lo
           match: comment
