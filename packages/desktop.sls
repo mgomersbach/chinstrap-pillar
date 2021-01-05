@@ -2,45 +2,50 @@ chinstrap:
   pkgs:
     desktop:
       - app-arch/file-roller
+      - app-editors/mousepad
+      - app-text/qpdfview
       - gnome-extra/gucharmap
+      - mate-extra/mate-calc
       - media-fonts/fira-code
       - media-fonts/fira-sans
-      - media-gfx/geeqie
       - media-gfx/gimp
+      - media-gfx/ristretto
       - media-sound/pavucontrol
-      - media-video/mpv
+      - media-video/parole
       - net-fs/autofs
       - net-im/pidgin
+      - net-im/purple-events
+      - net-im/slack-libpurple
       - net-wireless/blueman
       - sys-auth/nss-mdns
       - sys-fs/mtpfs
       - x11-apps/xdm
       - x11-base/xorg-server
       - x11-base/xorg-x11
-      - x11-misc/xdotool
+      - x11-misc/gigolo
       - x11-misc/light-locker
+      - x11-misc/mugshot
       - x11-misc/qt5ct
       - x11-misc/redshift
       - x11-misc/vdpauinfo
       - x11-misc/wmctrl
+      - x11-misc/xdotool
+      - x11-plugins/pidgin-libnotify
+      - x11-plugins/pidgin-skypeweb
+      - x11-plugins/pidgin-telegram
       - x11-terms/rxvt-unicode
-      - x11-themes/numix-icon-theme
-      - x11-themes/numix-solarized
       - x11-themes/qtstyleplugins
+      - x11-themes/pop-gtk-theme
+      - x11-themes/pop-icon-theme
       - xfce-base/xfce4-meta
+      - xfce-extra/thunar-media-tags-plugin
+      - xfce-extra/thunar-shares-plugin
+      - xfce-extra/thunar-volman
+      - xfce-extra/xfce4-dict
       - xfce-extra/xfce4-notifyd
+      - xfce-extra/xfce4-panel-profiles
       - xfce-extra/xfce4-power-manager
       - xfce-extra/xfce4-pulseaudio-plugin
       - xfce-extra/xfce4-screenshooter
       - xfce-extra/xfce4-taskmanager
       - xfce-extra/xfce4-whiskermenu-plugin
-      - xfce-extra/thunar-media-tags-plugin
-      - xfce-extra/thunar-shares-plugin
-      - xfce-extra/thunar-volman
-      - x11-plugins/pidgin-libnotify
-      - x11-plugins/pidgin-skypeweb
-      - x11-plugins/pidgin-telegram
-      - x11-themes/geany-themes
-      - net-im/purple-events
-      - net-im/slack-libpurple
-      - app-text/qpdfview
