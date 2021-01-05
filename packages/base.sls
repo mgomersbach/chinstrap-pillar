@@ -8,5 +8,4 @@ chinstrap:
       - app-shells/bash-completion
       - app-shells/gentoo-bashcomp
       - app-shells/gentoo-zsh-completions
-      - sys-apps/pv
       - www-client/links
