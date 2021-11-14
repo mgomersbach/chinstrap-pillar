@@ -274,7 +274,7 @@ sysctl:
       config: 01-net.conf
     # Limit number of orphans, each orphan can eat up to 16M (max wmem) of unswappable memory
     net.ipv4.tcp_max_orphans:
-      value: {{ (grains.mem_total * 1048576 * 0.1 / 65536) /4|int|abs }}
+      value: {{ (grains.mem_total * 1048576 * 0.1 / 65536) /4|round|int }}
       config: 01-net.conf
     net.ipv4.tcp_orphan_retries:
       value: 4
