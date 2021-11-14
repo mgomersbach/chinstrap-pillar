@@ -10,10 +10,10 @@ firewall:
       position: last
       policy: DROP
       rules:
-        00_limitedlog:
+        98_limitedlog:
           jump: LOG
           log-prefix: 'IPTables-LOG: '
-        01_drop_after_log:
+        99_drop_after_log:
           jump: DROP
     INPUT:
       policy: DROP
@@ -49,7 +49,7 @@ firewall:
           match: conntrack
           ctstate: 'ESTABLISHED,RELATED'
           jump: ACCEPT
-        00_drop_invalid:
+        99_drop_invalid:
           match: conntrack
           ctstate: INVALID
           jump: REJECT
@@ -60,10 +60,6 @@ firewall:
           match: conntrack
           ctstate: 'RELATED,ESTABLISHED'
           jump: ACCEPT
-        00_drop_invalid:
-          match: conntrack
-          ctstate: INVALID
-          jump: REJECT
         01_track_output_tcp:
           protocol: tcp
           m: conntrack
@@ -79,3 +75,7 @@ firewall:
           match: comment
           comment: Allow loopback out
           jump: ACCEPT
+        99_drop_invalid:
+          match: conntrack
+          ctstate: INVALID
+          jump: REJECT
