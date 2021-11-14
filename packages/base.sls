@@ -7,5 +7,4 @@ chinstrap:
       - app-portage/cpuid2cpuflags
       - app-shells/bash-completion
       - app-shells/gentoo-bashcomp
-      - app-shells/gentoo-zsh-completions
       - www-client/links

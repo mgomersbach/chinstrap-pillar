@@ -8,6 +8,7 @@ chinstrap:
       - app-arch/unzip
       - app-arch/zip
       - app-doc/zsh-lovers
+      - app-shells/gentoo-zsh-completions
       - app-shells/oh-my-zsh
       - app-shells/zsh
       - app-shells/zsh-completions

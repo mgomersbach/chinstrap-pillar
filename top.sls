@@ -14,6 +14,7 @@ base:
     - packages.base
     - packages.bootloader
     - packages.admin
+    - grub.default
   'G@cpu_flags:rdrand':
     - match: compound
     - rng-tools.default
@@ -25,7 +26,6 @@ base:
     - packages.devices
     - packages.pm
     - packages.wireless
-    - grub.default
   'eselect:profile:chinstrap*server':
     - match: grain
     - sysctl.forward
