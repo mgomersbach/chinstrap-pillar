@@ -36,9 +36,9 @@ base:
     - packages.libvirthost
   'eselect:profile:chinstrap*buildhelper':
     - match: grain
+    - packages.buildhelper
     - packages.server
     - php.default
-    - packages.buildhelper
   'eselect:profile:chinstrap*desktop':
     - match: grain
     - lightdm.default
