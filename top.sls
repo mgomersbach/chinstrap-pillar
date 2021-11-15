@@ -3,8 +3,6 @@ base:
     - match: grain
     - ssh.default
     - sysctl.default
-    - iptables.default
-    - iptables.sshguard
     - postfix.default
     - rsyslog.default
     - genkernel.default
