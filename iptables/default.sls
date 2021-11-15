@@ -40,7 +40,7 @@ firewall:
           match: conntrack
           ctstate: 'NEW,ESTABLISHED'
           jump: ACCEPT
-        99_logging_rule:
+        05_logging_rule:
           jump: DROPLOG
     FORWARD:
       policy: DROP
