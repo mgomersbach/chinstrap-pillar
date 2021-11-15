@@ -75,7 +75,7 @@ firewall:
           match: comment
           comment: Allow loopback out
           jump: ACCEPT
-        99_drop_invalid:
+        98_drop_invalid:
           match: conntrack
           ctstate: INVALID
           jump: REJECT
