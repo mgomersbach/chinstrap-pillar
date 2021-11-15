@@ -11,5 +11,4 @@ chinstrap:
       - media-gfx/blender
       - media-sound/audacious
       - net-fs/davfs2
-      - net-p2p/syncthing-gtk
       - sys-apps/gsmartcontrol
