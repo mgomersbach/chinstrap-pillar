@@ -14,9 +14,6 @@ portage:
       - parallel-fetch
       - parallel-install
       - buildpkg
-  gentoo_mirrors:
-    present:
-      - 'rsync://gentoo.hexnet.nl/gentoo-portage'
   extra_vars:
     fcflags:
       set: ${COMMON_FLAGS}
