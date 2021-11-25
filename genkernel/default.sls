@@ -108,7 +108,7 @@ genkernel:
     #- firmware_files: ""
 
     # Add new kernel to grub?
-    #- bootloader: "grub"
+    - bootloader: "grub2"
 
     # Enable splashutils in early space (initrd). Default is "no".
     - splash: 'no'

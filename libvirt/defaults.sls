@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# vim: ft=yaml
----
 libvirt:
   libvirtd:
     listen_tls: 0
