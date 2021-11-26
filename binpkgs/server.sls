@@ -11,4 +11,5 @@ chinstrap:
       - net-fs/davfs2
       - net-misc/geoipupdate
       - sys-cluster/nomad
+      - sys-fs/cachefilesd
       - www-servers/nginx
