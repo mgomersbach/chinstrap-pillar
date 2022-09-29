@@ -1,7 +1,6 @@
 chinstrap:
   pkgs:
     workstation:
-      - app-portage/repoman
       - dev-python/pip
       - dev-python/virtualenv
       - dev-vcs/tig
