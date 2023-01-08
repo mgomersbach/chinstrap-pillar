@@ -21,7 +21,6 @@ chinstrap:
       - sys-fs/mtpfs
       - x11-apps/xdm
       - x11-base/xorg-server
-      - x11-base/xorg-x11
       - x11-misc/gigolo
       - x11-misc/light-locker
       - x11-misc/mugshot
