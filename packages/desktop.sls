@@ -31,7 +31,6 @@ chinstrap:
       - x11-misc/xdotool
       - x11-plugins/pidgin-libnotify
       - x11-plugins/pidgin-skypeweb
-      - x11-plugins/pidgin-telegram
       - x11-terms/rxvt-unicode
       - x11-themes/qtstyleplugins
       - x11-themes/pop-gtk-theme
