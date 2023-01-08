@@ -32,17 +32,17 @@ chinstrap:
       - x11-plugins/pidgin-libnotify
       - x11-plugins/pidgin-skypeweb
       - x11-terms/rxvt-unicode
-      - x11-themes/qtstyleplugins
       - x11-themes/pop-gtk-theme
       - x11-themes/pop-icon-theme
+      - x11-themes/qtstyleplugins
+      - xfce-base/thunar-volman
       - xfce-base/xfce4-meta
+      - xfce-base/xfce4-power-manager
       - xfce-extra/thunar-media-tags-plugin
       - xfce-extra/thunar-shares-plugin
-      - xfce-extra/thunar-volman
       - xfce-extra/xfce4-dict
       - xfce-extra/xfce4-notifyd
       - xfce-extra/xfce4-panel-profiles
-      - xfce-extra/xfce4-power-manager
       - xfce-extra/xfce4-pulseaudio-plugin
       - xfce-extra/xfce4-screenshooter
       - xfce-extra/xfce4-taskmanager
