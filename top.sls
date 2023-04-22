@@ -32,16 +32,11 @@ base:
   'G@eselect:profile:chinstrap*server and G@virtual:physical':
     - match: compound
     - packages.libvirthost
-  'eselect:profile:chinstrap*buildhelper':
-    - match: grain
-    - packages.buildhelper
-    - packages.server
-    - php.default
   'eselect:profile:chinstrap*desktop':
     - match: grain
     - lightdm.default
     - packages.desktop
-  'eselect:profile:chinstrap*markws':
+  'eselect:profile:chinstrap*workstation':
     - match: grain
     - sysctl.forward
     - lightdm.default
@@ -68,7 +63,7 @@ base:
     - match: compound
     - binpkgs.media
     - binpkgs.desktop
-  'G@role:binpkg and G@eselect:profile:chinstrap*markws':
+  'G@role:binpkg and G@eselect:profile:chinstrap*workstation':
     - match: compound
     - binpkgs.media
     - binpkgs.server
