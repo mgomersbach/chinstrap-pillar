@@ -266,7 +266,7 @@ sysctl:
       config: 01-net.conf
     # Increase the tcp-time-wait buckets pool size to prevent simple DOS attacks
     net.ipv4.tcp_max_tw_buckets:
-      value: {{ (grains.mem_total * 1048576 / 4194304 * 256 * 2)|int|abs }}
+      value: {{ (grains.mem_total * 1048576 / 4194304 * 256 * 2)|round|int|abs }}
       config: 01-net.conf
     # Allow tw_reuse
     net.ipv4.tcp_tw_reuse:
@@ -274,7 +274,7 @@ sysctl:
       config: 01-net.conf
     # Limit number of orphans, each orphan can eat up to 16M (max wmem) of unswappable memory
     net.ipv4.tcp_max_orphans:
-      value: {{ (grains.mem_total * 1048576 * 0.1 / 65536) /4|int|abs }}
+      value: {{ (grains.mem_total * 1048576 * 0.1 / 65536) /4|round|int|abs }}
       config: 01-net.conf
     net.ipv4.tcp_orphan_retries:
       value: 4
