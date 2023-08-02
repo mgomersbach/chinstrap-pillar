@@ -1,5 +1,5 @@
 php:
-  version: '7.4'
+  version: '8.2'
 
   fpm:
     config:
@@ -8,7 +8,7 @@ php:
           recurse: True
         settings:
           global:
-            pid: /var/run/php-fpm-php7.4.pid
+            pid: /var/run/php-fpm-php8.2.pid
     pools:
       'default.conf':
         enabled: True
@@ -18,7 +18,7 @@ php:
           default:
             user: www-data
             group: www-data
-            listen: /var/run/php-fpm7.4.sock
+            listen: /var/run/php-fpm.sock
             listen.owner: www-data
             listen.group: www-data
             listen.mode: '0660'
@@ -67,36 +67,12 @@ php:
         'zlib.output_compression': 'Off'
         implicit_flush: 'Off'
         serialize_precision: 17
-        disable_functions:
-          [
-            pcntl_alarm,
-            pcntl_fork,
-            pcntl_waitpid,
-            pcntl_wait,
-            pcntl_wifexited,
-            pcntl_wifstopped,
-            pcntl_wifsignaled,
-            pcntl_wifcontinued,
-            pcntl_wexitstatus,
-            pcntl_wtermsig,
-            pcntl_wstopsig,
-            pcntl_signal,
-            pcntl_signal_dispatch,
-            pcntl_get_last_error,
-            pcntl_strerror,
-            pcntl_sigprocmask,
-            pcntl_sigwaitinfo,
-            pcntl_sigtimedwait,
-            pcntl_exec,
-            pcntl_getpriority,
-            pcntl_setpriority,
-          ]
         'zend.enable_gc': 'On'
         expose_php: 'Off'
         max_execution_time: 240
         max_input_time: 240
         max_input_vars: 2000
-        memory_limit: '256M'
+        memory_limit: '1024M'
         error_reporting: 'E_ALL & ~E_DEPRECATED & ~E_STRICT'
         display_errors: 'Off'
         display_startup_errors: 'Off'
