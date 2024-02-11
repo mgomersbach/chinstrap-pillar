@@ -9,7 +9,7 @@ chinstrap:
       - app-portage/genlop
       - app-portage/gentoolkit
       - app-portage/smart-live-rebuild
-      - dev-util/strace
+      - dev-debug/strace
       - net-analyzer/iftop
       - sys-apps/updateworld
       - sys-fs/ncdu
