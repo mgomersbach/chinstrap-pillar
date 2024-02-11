@@ -5,7 +5,7 @@ chinstrap:
       - dev-libs/isl
       - dev-libs/mpc
       - dev-libs/mpfr
-      - dev-util/systemtap
+      - dev-debug/systemtap
       - sys-devel/binutils
       - sys-devel/binutils-config
       - sys-devel/gcc

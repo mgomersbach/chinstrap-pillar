@@ -12,7 +12,7 @@ chinstrap:
       - app-shells/oh-my-zsh
       - app-shells/zsh
       - app-shells/zsh-completions
-      - dev-util/systemtap
+      - dev-debug/systemtap
       - net-fs/nfs-utils
       - net-misc/dhcpcd
       - sys-apps/mlocate
