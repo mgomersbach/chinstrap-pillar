@@ -8,4 +8,4 @@ chinstrap:
       - net-misc/freerdp
       - net-p2p/transmission
       - sci-calculators/galculator
-      - sys-debug/gdb
+      - dev-debug/gdb
