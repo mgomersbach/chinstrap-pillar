@@ -5,7 +5,6 @@ base:
     - sysctl.default
     - postfix.default
     - rsyslog.default
-    - genkernel.default
     - gentoo.portage.default
     - packages.toolchain
     - packages.salt

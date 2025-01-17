@@ -15,7 +15,6 @@ chinstrap:
       - net-fs/autofs
       - net-im/pidgin
       - net-im/purple-events
-      - net-im/slack-libpurple
       - net-wireless/blueman
       - sys-auth/nss-mdns
       - sys-fs/mtpfs
@@ -34,7 +33,6 @@ chinstrap:
       - x11-terms/rxvt-unicode
       - x11-themes/pop-gtk-theme
       - x11-themes/pop-icon-theme
-      - x11-themes/qtstyleplugins
       - xfce-base/thunar-volman
       - xfce-base/xfce4-meta
       - xfce-base/xfce4-power-manager
